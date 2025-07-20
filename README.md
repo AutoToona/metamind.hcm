@@ -1,2 +1,2 @@
-# metamind.hcm
+# metamindhcm
 Metamind Media
