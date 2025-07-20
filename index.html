@@ -4,7 +4,71 @@
   <meta charset="UTF-8">
   <title>Website đầu tay của anh!</title>
   <link rel="stylesheet" href="style.css">
+</head><!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>METAMIND MEDIA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <header>
+    <h1>📸 METAMIND MEDIA</h1>
+    <p>Khơi nguồn sáng tạo · Bứt phá công nghệ · Kết nối tương lai</p>
+    <nav>
+      <button onclick="showTab('home')">Trang chủ</button>
+      <button onclick="showTab('about')">Giới thiệu</button>
+      <button onclick="showTab('projects')">Dự án</button>
+      <button onclick="showTab('contact')">Liên hệ</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="tab active">
+      <h2>Chào mừng đến với METAMIND MEDIA</h2>
+      <p>Chúng tôi là cộng đồng sáng tạo nội dung đa nền tảng, kết hợp công nghệ, thiết kế và truyền thông để mang đến những trải nghiệm khác biệt và sâu sắc.</p>
+    </section>
+
+    <section id="about" class="tab">
+      <h2>Về chúng tôi</h2>
+      <p>Metamind Media là một nhóm trẻ năng động tại TP.HCM, chuyên về:</p>
+      <ul>
+        <li>🎥 Sản xuất video truyền thông</li>
+        <li>🎨 Thiết kế đồ họa & nhận diện thương hiệu</li>
+        <li>💡 Tư duy sáng tạo nội dung và ý tưởng chiến dịch</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="tab">
+      <h2>Dự án tiêu biểu</h2>
+      <ul>
+        <li><strong>✨ “Green Home”:</strong> Chiến dịch truyền thông xanh</li>
+        <li><strong>🎬 “NextUp!”:</strong> Chuỗi video giới thiệu sản phẩm startup</li>
+        <li><strong>🌐 “Digital Awakening”:</strong> Landing page sự kiện công nghệ</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="tab">
+      <h2>Liên hệ</h2>
+      <p>Email: <a href="mailto:contact@metamind.vn">contact@metamind.vn</a></p>
+      <p>Zalo: 0123.456.789</p>
+      <p>Instagram: <a href="https://instagram.com/metamind.media">@metamind.media</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 METAMIND MEDIA · All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
 <body>
   <header>
     <h1>Chào mừng đến với trang web đầu tiên!</h1>
